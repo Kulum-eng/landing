@@ -1,0 +1,8 @@
+.logo-and-title {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    margin-right: 10px; /* Ajusta el espacio entre la imagen y el texto según lo necesites */
+}

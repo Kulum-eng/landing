@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <link rel="apple-touch-icon" href="css">
+    <meta charset="UTF-8">
+    <title>iPhone</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+        header {
+            background-color: #3498db;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+            font-size: 32px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+            margin-top: 20px;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: #ecf0f1;
+        }
+        .header-landing{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #ecf0f1;
+            padding: 0.25rem;           
+        }
+        .logo-header{
+            max-width: 35px;
+            height: auto;
+            width: auto;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>iPhone</h1>
+        <a class="navbar-brand text-success logo h1 align-self-center" href="index.html">
+            <img src="img/13.png" alt="Logo de la universidad" width="50" height="50">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#acerca">Acerca de</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <center>
+      <h2 class="h1"> <h1>¡Bienvenidos a Nuestras Ofertas Especiales!</h1><b>
+      </center>
+      <!-- End Categories of The Month -->
+  
+  
+      <!-- Start Featured Product -->
+      <section class="bg-black py-5">
+        <div class="container">
+            <div class="row align-items-center justify-content-center py-3">
+                <div class="col-md-10 text-center text-white">
+                    <h1>iphone</h1>
+                    <p>Adquiere un iPhone y descubre un mundo donde la innovación y la elegancia se fusionan. Es mucho más que un dispositivo; es una ventana a la creatividad, la productividad y la conexión. Con su diseño icónico y su potente rendimiento, el iPhone es tu socio ideal para capturar momentos inolvidables, explorar nuevas posibilidades y simplificar tu vida diaria. Embárcate en un viaje tecnológico hacia el futuro con el iPhone: una experiencia que transformará la manera en que vives, trabajas y te conectas con el mundo que te rodea."</p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-8 text-center">
+                    <video src="img/12.mp4" width="100%" autoplay muted loop poster="img/12.jpg"></video>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <meta charset="UTF-8">
+    <title>Inicio - Carrusel de Imágenes</title>
+    <style>
+        /* Estilos para el carrusel */
+        #carrusel {
+            width: 100%;
+            max-width: 800px;
+            margin: 20px auto;
+            overflow: hidden;
+            position: relative;
+        }
+        #carrusel img {
+            width: 100px; /* Ancho de las imágenes */
+            display: block;
+            transition: opacity 0.5s ease-in-out;
+            float: left;
+            margin-right: 10px;
+            border-radius: 5px;
+        }
+        #carrusel .imagen-descripcion {
+            margin-bottom: 10px;
+            clear: both;
+            overflow: hidden;
+        }
+        
+    </style>
+</head>
+<body>
+  
+    <section id="inicio">
+        <h2>Inicio</h2>
+        <p>
+          "¡Bienvenido al universo de la conectividad móvil! Aquí, cada toque despierta infinitas posibilidades. Explora nuestra gama de dispositivos y sumérgete en la revolución digital. Encuentra el compañero perfecto que se adapte a tu estilo y necesidades. Descubre la innovación en tus manos y únete a la experiencia que redefine la movilidad. ¡Bienvenido al futuro, bienvenido al mundo de los celulares!"</p>
+        <div id="carrusel">
+            <div class="imagen-descripcion">
+                <img class="imagen-carrusel" src="img/1" alt="Imagen 1">
+                <p>.</p>
+            </div>
+            <div class="imagen-descripcion">
+                <img class="imagen-carrusel" src="img/3" alt="Imagen 2">
+                <p>"¡Bienvenido a nuestro mundo móvil! En esta página, te sumergirás en la vanguardia de la tecnología celular. Descubre los últimos modelos, accesorios innovadores y servicios especializados que mejorarán tu experiencia móvil. Explora nuestro universo de dispositivos y conoce todo lo que tenemos preparado para mantenerte conectado en todo momento."</p>
+            </div>
+            <div class="imagen-descripcion">
+                <img class="imagen-carrusel" src="img/2" alt="Imagen 3">
+                <p></p>
+            </div>
+            <!-- Agrega más imágenes con sus respectivas rutas y atributos -->
+        </div>
+    </section>
+
+    <script>
+        let index = 0;
+        const imagenes = document.getElementsByClassName('imagen-carrusel');
+
+        function mostrarImagenes() {
+            for (let i = 0; i < imagenes.length; i++) {
+                imagenes[i].style.opacity = 0;
+            }
+            index = (index + 1) % imagenes.length;
+            imagenes[index].style.opacity = 1;
+            setTimeout(mostrarImagenes, 3000); // Cambia la imagen cada 3 segundos
+        }
+
+        mostrarImagenes();
+    </script>
+
+    <section id="acerca">
+      <h2>Acerca de Nosotros</h2>
+      <p>Somos una empresa líder en el sector de la telefonía móvil, dedicada a ofrecer a nuestros clientes una amplia gama de dispositivos, desde los últimos modelos hasta opciones accesibles y funcionales. Nuestra misión es proporcionar tecnología innovadora y soluciones que se adapten a las necesidades de cada usuario.</p>
+      <p>Nos esforzamos por ofrecer un servicio excepcional, brindando asesoramiento experto, soporte técnico de calidad y una experiencia de compra satisfactoria. Además de la venta de dispositivos, también nos especializamos en accesorios de calidad y servicios de reparación de confianza para garantizar que nuestros clientes estén siempre conectados y satisfechos con sus equipos.</p>
+  </section>
+
+    <section id="servicios">
+      <h2 style="text-align: center;">Servicios de Telefonía Móvil</h2>
+      <p style="text-align: center;">Ofrecemos una amplia variedad de servicios para satisfacer tus necesidades en el mundo de la telefonía móvil:</p>
+      <ul style="list-style: none; padding: 0; text-align: center;">
+          <li style="text-align: center;">
+              Venta de teléfonos celulares nuevos y usados de las mejores marcas.
+              <img src="img/1" alt="Venta de teléfonos" style="width: 200px; height: 200px; object-fit: cover; border-radius: 5px; box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); display: block; margin: 0 auto;">
+          </li>
+          <li style="text-align: center;">
+              Asesoramiento técnico para la selección de equipos según tus necesidades.
+              <img src="img/2" alt="Asesoramiento técnico" style="width: 200px; height: 200px; object-fit: cover; border-radius: 5px; box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); display: block; margin: 0 auto;">
+          </li>
+          <li style="text-align: center;">
+              Servicio de reparación y mantenimiento para teléfonos de diversas marcas y modelos.
+              <img src="img/2" alt="Reparación y mantenimiento" style="width: 200px; height: 200px; object-fit: cover; border-radius: 5px; box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); display: block; margin: 0 auto;">
+          </li>
+          <li style="text-align: center;">
+              Accesorios y complementos para mejorar tu experiencia con tu dispositivo móvil.
+              <img src="img/4" alt="Accesorios y complementos" style="width: 200px; height: 200px; object-fit: cover; border-radius: 5px; box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); display: block; margin: 0 auto;">
+          </li>
+      </ul>
+  </section>
+  
+  <section id="contacto" style="background-color: #f7f7f7; padding: 50px 0;">
+    <div class="container">
+        <h2 style="text-align: center; margin-bottom: 30px;">Contacto</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Información de contacto:</h3>
+                <ul>
+                    <li><strong>Dirección:</strong> Teran, Tuxtla Gutierrez</li>
+                    <li><strong>Teléfono:</strong> 961-319-14-51</li>
+                    <li><strong>Email:</strong> ale29rmrz@gmail.com</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <h3>Horario de atención:</h3>
+                <p>Lunes a Viernes: 9am - 7pm</p>
+                <p>Sábados: 10am - 4pm</p>
+                <p>Domingos: Cerrado</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<nav class="navbar navbar-expand-lg bg-dark navbar-light d-none d-lg-block" id="templatemo_nav_top">
+    <div class="container text-light">
+        <div class="w-100 d-flex justify-content-between">
+            <div>
+                <h4 class="navbar-sm-brand text-light text-decoration-none" href="">
+                    Universidad Politécnica de Chiapas Ing. Software Alexia Vanelli Ramirez Santana, Adriana Nabethse
+                </h4>
+            </div>
+        </div>
+    </div>
+</nav>
+    
+  
+</body>
+</html>
+
+
